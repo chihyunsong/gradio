@@ -306,14 +306,15 @@ class Interface:
             webbrowser.open(
                 path_to_local_server
             )  # Open a browser tab with the interface.
-        if inline:
-            from IPython.display import IFrame
+        
+        # if inline:
+        #     from IPython.display import IFrame
 
-            if (
-                is_colab
-            ):  # Embed the remote interface page if on google colab; otherwise, embed the local page.
-                display(IFrame(share_url, width=1000, height=500))
-            else:
-                display(IFrame(path_to_local_server, width=1000, height=500))
+        #     if (
+        #         is_colab
+        #     ):  # Embed the remote interface page if on google colab; otherwise, embed the local page.
+        #         display(IFrame(share_url, width=1000, height=500))
+        #     e\
+        #         display(IFrame(path_to_local_server, width=1000, height=500))
 
         return httpd, path_to_local_server, share_url

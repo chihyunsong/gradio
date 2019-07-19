@@ -172,7 +172,7 @@ class Interface:
         for m, msg in enumerate(validation_inputs):
             if self.verbose:
                 print(
-                    f"Validating samples: {m+1}/{n}  ["
+                    "Validating samples: {m+1}/{n}  ["
                     + "=" * (m + 1)
                     + "." * (n - m - 1)
                     + "]",
